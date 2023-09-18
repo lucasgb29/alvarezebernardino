@@ -1,0 +1,26 @@
+{% load static%}
+
+<header>
+    <div class="header_superior">
+        <a href="#">
+            <img src="{% static '/assets/WhatsApp Image 2023-08-21 at 16.58.24.png' %}" alt="logo da alvarezebernardino">
+        </a>
+        <h1 class="nome_AB"><span class="nome_alvarez">ALVAREZ</span>&<span class="nome_bernardino">BERNARDINO</span></h1>
+    </div>
+    <nav >
+    <ul class="nav">
+        <li>
+            <a href="{% url 'index' %}" class="nav_item">HOME</a>
+        </li>
+        <li>
+            <a href="instituicao.html" class="nav_item">INSTITUIÇÃO</a>
+        </li>
+        <li>
+            <a href="{% url 'servicos' %}" class="nav_item">SERVIÇOS</a>
+        </li>
+        <li>
+            <a href="contato.html" class="nav_item">CONTATO</a>
+        </li>
+    </nav>
+    </ul>
+</header>

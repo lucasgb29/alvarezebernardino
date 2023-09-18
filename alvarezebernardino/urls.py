@@ -1,6 +1,7 @@
 from django.urls import path
-from alvarezebernardino.views import index
+from alvarezebernardino.views import index,servicos
 
 urlpatterns = [
-    path('',index)
+    path('',index, name= 'index'),
+    path('servicos/',servicos, name='servicos')
 ]

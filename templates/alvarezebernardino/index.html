@@ -1,19 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>esta funcionando</h1>
-    </header>
+{% extends 'alvarezebernardino/base.html' %}
+{% load static %}
+{% block content%}
+    
     <main>
-
+        <div class="textos">
+            <h1 class="lema">“Atender às necessidades empresariais com transparência, seriedade e satisfação, são os pilares que sustentam nossa forma de agir.”</h1>
+            <h1 class="titulo">Quem nos somos</h1>
+            <p class="texto">Na Alvarez & Bernardino, somos especialistas em fornecer soluções financeiras e contábeis de alta qualidade para médias empresas lucrativas e entidades sem fins lucrativos. Atendemos setores industriais, comerciais e de serviços, com destaque em Assistência Social, Saúde e Educação. Nossa equipe altamente qualificada oferece orientações personalizadas e estratégias sob medida para impulsionar o crescimento e o sucesso de nossos clientes. Estamos comprometidos com a excelência, ética profissional e atualizações constantes para garantir conformidade e vantagem competitiva. Seja qual for sua necessidade, a Alvarez & Bernardino está pronta para ser sua parceira confiável.</p>
+            <h1 class="titulo">Nossos serviços</h1>
+            <ul class="nossos_servicos">
+                <li>
+                    <a href="" class="servicos">Auditoria Contábil, Tributária e de Recursos Humanos;</a>
+                </li>
+                <li>
+                    <a href="" class="servicos">Auditoria Interna;</a>
+                </li>
+                <li>
+                    <a href="" class="servicos">Assessoria e Consultoria Contábil e Tributária</a>
+                </li>
+                <li>
+                    <a href="" class="servicos">Due Diligence para aquisição e avaliação de empresas;</a>
+                </li>
+                <li>
+                    <a href="" class="servicos">Outras atividades no âmbito das necessidades das empresas e organizações, dentro das áreas de  especialização de seus profissionais.</a>
+                </li>
+            </ul>
+            <div class="chamada">
+            <a href="" class="chamada_link">Saiba Mais</a>
+            <a href="" class="chamada_link">Entre em Contato</a>
+            </div>
+        </div>
+        <div class="imagens">
+            <img src="{% static '/assets/simbolo-da-contabilidade-500x624.png' %}" alt="" class="imagens_simbolo">
+            <img src="{% static '/assets/istockphoto-1424122482-170667a.webp' %}" alt="" class="imagens_generica">
+        </div>
     </main>
-    <footer>
+    
 
-    </footer>
-</body>
-</html>
+    {% endblock %}
